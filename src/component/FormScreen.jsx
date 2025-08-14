@@ -1,7 +1,7 @@
 import { useState } from "react";
 import movies from "../data/movies";
 
-function FormScreen(){
+function FormScreen({onSubmit}){
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [selectedMovie, setSelectedMovie] = useState("");
@@ -85,7 +85,7 @@ function FormScreen(){
                         />
                       </label>            
                     ))}
-                    {errors.movie && <p>{errors.movie}</p>}
+                    {errors.selectedMovie && <p>{errors.selectedMovie}</p>}
                 </div>
             </div>
             <div>
