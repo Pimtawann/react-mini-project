@@ -49,7 +49,7 @@ function FormScreen({onSubmit}){
       };
 
     return(
-        <form onSubmit={handleSubmit}>
+        <form noValidate onSubmit={handleSubmit}>
             <div>
                 <label>Name:</label>
                 <input
